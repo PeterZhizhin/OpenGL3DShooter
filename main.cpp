@@ -3,18 +3,22 @@
 #include <GL/glew.h>
 #include <GL/freeglut.h>
 
-int init_resources(void) 
+bool init_resources(void) 
 {
 
-	return 1;
+	return true;
 }
 
 void onDisplay()
 {
+	glClearColor(0.9f,0.9f,0.9f,1);
+	glClear(GL_COLOR_BUFFER_BIT);
 
+	glutSwapBuffers();
 }
 
-void free_resources() {
+void free_resources()
+{
 
 }
 
