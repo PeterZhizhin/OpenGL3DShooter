@@ -2,8 +2,8 @@ APP := main
 
 CXX := g++ 
 LD := g++
-CXXFLAGS += -DDEBUG -Wall -std=c++11
-LDFLAGS += -lGLEW -lGL -lglut
+CXXFLAGS += -DDEBUG -Wall -std=c++14
+LDFLAGS += -lGLEW -lGL -lglut -lpthread
 
 SOURCES := $(wildcard *.cpp)
 OBJECTS := $(patsubst %.cpp, %.o, $(SOURCES))

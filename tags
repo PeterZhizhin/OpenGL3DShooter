@@ -1,0 +1,192 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+.ycm_extra_conf.py	.ycm_extra_conf.py	1;"	F
+APP	makefile	/^APP := main$/;"	m
+AbstractShader	AbstractShader.cpp	/^AbstractShader::AbstractShader(GLuint programId)$/;"	f	class:AbstractShader	signature:(GLuint programId)
+AbstractShader	AbstractShader.h	/^	AbstractShader(GLuint programId);$/;"	p	class:AbstractShader	access:public	signature:(GLuint programId)
+AbstractShader	AbstractShader.h	/^class AbstractShader $/;"	c
+AbstractShader.cpp	AbstractShader.cpp	1;"	F
+AbstractShader.h	AbstractShader.h	1;"	F
+AbstractShader::AbstractShader	AbstractShader.cpp	/^AbstractShader::AbstractShader(GLuint programId)$/;"	f	class:AbstractShader	signature:(GLuint programId)
+AbstractShader::AbstractShader	AbstractShader.h	/^	AbstractShader(GLuint programId);$/;"	p	class:AbstractShader	access:public	signature:(GLuint programId)
+AbstractShader::MATRIX_LOCATION	AbstractShader.h	/^	static const GLint MATRIX_LOCATION = 3;$/;"	m	class:AbstractShader	access:public
+AbstractShader::NORMAL_ATTRIB_LOCATION	AbstractShader.h	/^	static const GLint NORMAL_ATTRIB_LOCATION = 2;$/;"	m	class:AbstractShader	access:public
+AbstractShader::TEXCOORD_ATTRIB_LOCATION	AbstractShader.h	/^	static const GLint TEXCOORD_ATTRIB_LOCATION = 1;$/;"	m	class:AbstractShader	access:public
+AbstractShader::VERTEX_ATTRIB_LOCATION	AbstractShader.h	/^	static const GLint VERTEX_ATTRIB_LOCATION = 0;$/;"	m	class:AbstractShader	access:public
+AbstractShader::assertIfNotBinded	AbstractShader.cpp	/^void AbstractShader::assertIfNotBinded()$/;"	f	class:AbstractShader	signature:()
+AbstractShader::assertIfNotBinded	AbstractShader.h	/^	void assertIfNotBinded();$/;"	p	class:AbstractShader	access:protected	signature:()
+AbstractShader::bind	AbstractShader.cpp	/^void AbstractShader::bind()$/;"	f	class:AbstractShader	signature:()
+AbstractShader::bind	AbstractShader.h	/^	void bind();$/;"	p	class:AbstractShader	access:public	signature:()
+AbstractShader::bindMatrix	AbstractShader.cpp	/^void AbstractShader::bindMatrix(glm::mat4 matrix)$/;"	f	class:AbstractShader	signature:(glm::mat4 matrix)
+AbstractShader::bindMatrix	AbstractShader.h	/^	void bindMatrix(glm::mat4 matrix);$/;"	p	class:AbstractShader	access:public	signature:(glm::mat4 matrix)
+AbstractShader::getName	AbstractShader.cpp	/^std::string AbstractShader::getName()$/;"	f	class:AbstractShader	signature:()
+AbstractShader::getName	AbstractShader.h	/^	virtual std::string getName();$/;"	p	class:AbstractShader	access:private	signature:()
+AbstractShader::id	AbstractShader.h	/^	GLuint id;$/;"	m	class:AbstractShader	access:private
+AbstractShader::isBinded	AbstractShader.h	/^	bool isBinded;$/;"	m	class:AbstractShader	access:private
+AbstractShader::unbind	AbstractShader.cpp	/^void AbstractShader::unbind()$/;"	f	class:AbstractShader	signature:()
+AbstractShader::unbind	AbstractShader.h	/^	void unbind();$/;"	p	class:AbstractShader	access:public	signature:()
+AbstractShader::~AbstractShader	AbstractShader.cpp	/^AbstractShader::~AbstractShader()$/;"	f	class:AbstractShader	signature:()
+AbstractShader::~AbstractShader	AbstractShader.h	/^	~AbstractShader();$/;"	p	class:AbstractShader	access:public	signature:()
+BasicShader	BasicShader.cpp	/^BasicShader::BasicShader() : $/;"	f	class:BasicShader	signature:()
+BasicShader	BasicShader.h	/^	BasicShader();$/;"	p	class:BasicShader	access:public	signature:()
+BasicShader	BasicShader.h	/^class BasicShader : public AbstractShader $/;"	c	inherits:AbstractShader
+BasicShader.cpp	BasicShader.cpp	1;"	F
+BasicShader.h	BasicShader.h	1;"	F
+BasicShader::BasicShader	BasicShader.cpp	/^BasicShader::BasicShader() : $/;"	f	class:BasicShader	signature:()
+BasicShader::BasicShader	BasicShader.h	/^	BasicShader();$/;"	p	class:BasicShader	access:public	signature:()
+BasicShader::getName	BasicShader.cpp	/^std::string BasicShader::getName()$/;"	f	class:BasicShader	signature:()
+BasicShader::getName	BasicShader.h	/^	virtual std::string getName();$/;"	p	class:BasicShader	access:private	signature:()
+CXX	makefile	/^CXX := g++ $/;"	m
+DirectoryOfThisScript	.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f	access:public
+FlagsForFile	.ycm_extra_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f	access:public
+GetCompilationInfoForFile	.ycm_extra_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f	access:public
+IsHeaderFile	.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f	access:public
+LD	makefile	/^LD := g++$/;"	m
+MATRIX_LOCATION	AbstractShader.h	/^	static const GLint MATRIX_LOCATION = 3;$/;"	m	class:AbstractShader	access:public
+MakeRelativePathsInFlagsAbsolute	.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f	access:public
+NORMAL_ATTRIB_LOCATION	AbstractShader.h	/^	static const GLint NORMAL_ATTRIB_LOCATION = 2;$/;"	m	class:AbstractShader	access:public
+OBJECTS	makefile	/^OBJECTS := $(patsubst %.cpp, %.o, $(SOURCES))$/;"	m
+SHADER_LOADER_H	ShaderLoader.h	2;"	d
+SOURCES	makefile	/^SOURCES := $(wildcard *.cpp)$/;"	m
+SOURCE_EXTENSIONS	.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v
+ShaderLoader	ShaderLoader.h	/^class ShaderLoader $/;"	c
+ShaderLoader.cpp	ShaderLoader.cpp	1;"	F
+ShaderLoader.h	ShaderLoader.h	1;"	F
+ShaderLoader::createShader	ShaderLoader.cpp	/^GLuint ShaderLoader::createShader(std::string path, GLenum type) $/;"	f	class:ShaderLoader	signature:(std::string path, GLenum type)
+ShaderLoader::createShader	ShaderLoader.h	/^	static GLuint createShader(std::string path, GLenum type);$/;"	p	class:ShaderLoader	access:private	signature:(std::string path, GLenum type)
+ShaderLoader::loadFile	ShaderLoader.cpp	/^std::string ShaderLoader::loadFile(std::string path)$/;"	f	class:ShaderLoader	signature:(std::string path)
+ShaderLoader::loadFile	ShaderLoader.h	/^	static std::string loadFile(std::string path);$/;"	p	class:ShaderLoader	access:private	signature:(std::string path)
+ShaderLoader::loadProgram	ShaderLoader.cpp	/^GLuint ShaderLoader::loadProgram(std::string vertexPath, std::string fragmentPath) $/;"	f	class:ShaderLoader	signature:(std::string vertexPath, std::string fragmentPath)
+ShaderLoader::loadProgram	ShaderLoader.h	/^	static GLuint loadProgram(std::string vertexPath, std::string fragmentPath);$/;"	p	class:ShaderLoader	access:public	signature:(std::string vertexPath, std::string fragmentPath)
+TEXCOORD_ATTRIB_LOCATION	AbstractShader.h	/^	static const GLint TEXCOORD_ATTRIB_LOCATION = 1;$/;"	m	class:AbstractShader	access:public
+VERTEX_ATTRIB_LOCATION	AbstractShader.h	/^	static const GLint VERTEX_ATTRIB_LOCATION = 0;$/;"	m	class:AbstractShader	access:public
+VertexData	VertexData.cpp	/^VertexData::VertexData()$/;"	f	class:VertexData	signature:()
+VertexData	VertexData.h	/^	VertexData();$/;"	p	class:VertexData	access:public	signature:()
+VertexData	VertexData.h	/^class VertexData$/;"	c
+VertexData.cpp	VertexData.cpp	1;"	F
+VertexData.h	VertexData.h	1;"	F
+VertexData::VertexData	VertexData.cpp	/^VertexData::VertexData()$/;"	f	class:VertexData	signature:()
+VertexData::VertexData	VertexData.h	/^	VertexData();$/;"	p	class:VertexData	access:public	signature:()
+VertexData::data	VertexData.h	/^	std::vector<GLfloat> data;$/;"	m	class:VertexData	access:private
+VertexData::setNormal	VertexData.cpp	/^void VertexData::setNormal(GLfloat x)$/;"	f	class:VertexData	signature:(GLfloat x)
+VertexData::setNormal	VertexData.cpp	/^void VertexData::setNormal(GLfloat x, GLfloat y)$/;"	f	class:VertexData	signature:(GLfloat x, GLfloat y)
+VertexData::setNormal	VertexData.cpp	/^void VertexData::setNormal(GLfloat x, GLfloat y, GLfloat z)$/;"	f	class:VertexData	signature:(GLfloat x, GLfloat y, GLfloat z)
+VertexData::setNormal	VertexData.h	/^	void setNormal(GLfloat x);$/;"	p	class:VertexData	access:public	signature:(GLfloat x)
+VertexData::setNormal	VertexData.h	/^	void setNormal(GLfloat x, GLfloat y);$/;"	p	class:VertexData	access:public	signature:(GLfloat x, GLfloat y)
+VertexData::setNormal	VertexData.h	/^	void setNormal(GLfloat x, GLfloat y, GLfloat z);$/;"	p	class:VertexData	access:public	signature:(GLfloat x, GLfloat y, GLfloat z)
+VertexData::setTexture	VertexData.cpp	/^void VertexData::setTexture(GLfloat u)$/;"	f	class:VertexData	signature:(GLfloat u)
+VertexData::setTexture	VertexData.cpp	/^void VertexData::setTexture(GLfloat u, GLfloat v)$/;"	f	class:VertexData	signature:(GLfloat u, GLfloat v)
+VertexData::setTexture	VertexData.cpp	/^void VertexData::setTexture(GLfloat u, GLfloat v, GLfloat w)$/;"	f	class:VertexData	signature:(GLfloat u, GLfloat v, GLfloat w)
+VertexData::setTexture	VertexData.h	/^	void setTexture(GLfloat u);$/;"	p	class:VertexData	access:public	signature:(GLfloat u)
+VertexData::setTexture	VertexData.h	/^	void setTexture(GLfloat u, GLfloat v);$/;"	p	class:VertexData	access:public	signature:(GLfloat u, GLfloat v)
+VertexData::setTexture	VertexData.h	/^	void setTexture(GLfloat u, GLfloat v, GLfloat w);$/;"	p	class:VertexData	access:public	signature:(GLfloat u, GLfloat v, GLfloat w)
+VertexData::setVertex	VertexData.cpp	/^void VertexData::setVertex(GLfloat x)$/;"	f	class:VertexData	signature:(GLfloat x)
+VertexData::setVertex	VertexData.cpp	/^void VertexData::setVertex(GLfloat x, GLfloat y)$/;"	f	class:VertexData	signature:(GLfloat x, GLfloat y)
+VertexData::setVertex	VertexData.cpp	/^void VertexData::setVertex(GLfloat x, GLfloat y, GLfloat z)$/;"	f	class:VertexData	signature:(GLfloat x, GLfloat y, GLfloat z)
+VertexData::setVertex	VertexData.cpp	/^void VertexData::setVertex(GLfloat x, GLfloat y, GLfloat z, GLfloat w)$/;"	f	class:VertexData	signature:(GLfloat x, GLfloat y, GLfloat z, GLfloat w)
+VertexData::setVertex	VertexData.h	/^	void setVertex(GLfloat x);$/;"	p	class:VertexData	access:public	signature:(GLfloat x)
+VertexData::setVertex	VertexData.h	/^	void setVertex(GLfloat x, GLfloat y);$/;"	p	class:VertexData	access:public	signature:(GLfloat x, GLfloat y)
+VertexData::setVertex	VertexData.h	/^	void setVertex(GLfloat x, GLfloat y, GLfloat z);$/;"	p	class:VertexData	access:public	signature:(GLfloat x, GLfloat y, GLfloat z)
+VertexData::setVertex	VertexData.h	/^	void setVertex(GLfloat x, GLfloat y, GLfloat z, GLfloat w);	$/;"	p	class:VertexData	access:public	signature:(GLfloat x, GLfloat y, GLfloat z, GLfloat w)
+WORLD_H	World.h	2;"	d
+World	World.cpp	/^World::World(int width, int height) $/;"	f	class:World	signature:(int width, int height)
+World	World.h	/^	World(int width, int height);$/;"	p	class:World	access:public	signature:(int width, int height)
+World	World.h	/^class World {$/;"	c
+World.cpp	World.cpp	1;"	F
+World.h	World.h	1;"	F
+World::World	World.cpp	/^World::World(int width, int height) $/;"	f	class:World	signature:(int width, int height)
+World::World	World.h	/^	World(int width, int height);$/;"	p	class:World	access:public	signature:(int width, int height)
+World::calculateFPS	World.cpp	/^void World::calculateFPS(float deltaTime) $/;"	f	class:World	signature:(float deltaTime)
+World::calculateFPS	World.h	/^	void calculateFPS(float deltaTime);$/;"	p	class:World	access:private	signature:(float deltaTime)
+World::currentFPS	World.h	/^	int currentFPS;$/;"	m	class:World	access:private
+World::draw	World.cpp	/^void World::draw()$/;"	f	class:World	signature:()
+World::draw	World.h	/^	void draw();	$/;"	p	class:World	access:public	signature:()
+World::height	World.h	/^	int width,height;$/;"	m	class:World	access:private
+World::resize	World.cpp	/^void World::resize(int width, int height) $/;"	f	class:World	signature:(int width, int height)
+World::resize	World.h	/^	void resize(int width, int height);$/;"	p	class:World	access:public	signature:(int width, int height)
+World::timeAccumulator	World.h	/^	float timeAccumulator;$/;"	m	class:World	access:private
+World::update	World.cpp	/^void World::update(float deltaTime)$/;"	f	class:World	signature:(float deltaTime)
+World::update	World.h	/^	void update(float deltaTime);$/;"	p	class:World	access:public	signature:(float deltaTime)
+World::width	World.h	/^	int width,height;$/;"	m	class:World	access:private
+World::~World	World.cpp	/^World::~World()$/;"	f	class:World	signature:()
+World::~World	World.h	/^	~World();$/;"	p	class:World	access:public	signature:()
+assertIfNotBinded	AbstractShader.cpp	/^void AbstractShader::assertIfNotBinded()$/;"	f	class:AbstractShader	signature:()
+assertIfNotBinded	AbstractShader.h	/^	void assertIfNotBinded();$/;"	p	class:AbstractShader	access:protected	signature:()
+bind	AbstractShader.cpp	/^void AbstractShader::bind()$/;"	f	class:AbstractShader	signature:()
+bind	AbstractShader.h	/^	void bind();$/;"	p	class:AbstractShader	access:public	signature:()
+bindMatrix	AbstractShader.cpp	/^void AbstractShader::bindMatrix(glm::mat4 matrix)$/;"	f	class:AbstractShader	signature:(glm::mat4 matrix)
+bindMatrix	AbstractShader.h	/^	void bindMatrix(glm::mat4 matrix);$/;"	p	class:AbstractShader	access:public	signature:(glm::mat4 matrix)
+calculateFPS	World.cpp	/^void World::calculateFPS(float deltaTime) $/;"	f	class:World	signature:(float deltaTime)
+calculateFPS	World.h	/^	void calculateFPS(float deltaTime);$/;"	p	class:World	access:private	signature:(float deltaTime)
+compilation_database_folder	.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v
+createShader	ShaderLoader.cpp	/^GLuint ShaderLoader::createShader(std::string path, GLenum type) $/;"	f	class:ShaderLoader	signature:(std::string path, GLenum type)
+createShader	ShaderLoader.h	/^	static GLuint createShader(std::string path, GLenum type);$/;"	p	class:ShaderLoader	access:private	signature:(std::string path, GLenum type)
+create_update_thread	main.cpp	/^bool create_update_thread() $/;"	f	signature:()
+create_update_thread	main.cpp	/^bool create_update_thread();$/;"	p	file:	signature:()
+currentFPS	World.h	/^	int currentFPS;$/;"	m	class:World	access:private
+data	VertexData.h	/^	std::vector<GLfloat> data;$/;"	m	class:VertexData	access:private
+database	.ycm_extra_conf.py	/^  database = None$/;"	v
+database	.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+draw	World.cpp	/^void World::draw()$/;"	f	class:World	signature:()
+draw	World.h	/^	void draw();	$/;"	p	class:World	access:public	signature:()
+flags	.ycm_extra_conf.py	/^flags = [$/;"	v
+free_resources	main.cpp	/^void free_resources()$/;"	f	signature:()
+getName	AbstractShader.cpp	/^std::string AbstractShader::getName()$/;"	f	class:AbstractShader	signature:()
+getName	AbstractShader.h	/^	virtual std::string getName();$/;"	p	class:AbstractShader	access:private	signature:()
+getName	BasicShader.cpp	/^std::string BasicShader::getName()$/;"	f	class:BasicShader	signature:()
+getName	BasicShader.h	/^	virtual std::string getName();$/;"	p	class:BasicShader	access:private	signature:()
+height	World.h	/^	int width,height;$/;"	m	class:World	access:private
+height	main.cpp	/^constexpr auto width = 640, height = 480;$/;"	v
+id	AbstractShader.h	/^	GLuint id;$/;"	m	class:AbstractShader	access:private
+init_resources	main.cpp	/^bool init_resources(void) $/;"	f	signature:(void)
+isBinded	AbstractShader.h	/^	bool isBinded;$/;"	m	class:AbstractShader	access:private
+loadFile	ShaderLoader.cpp	/^std::string ShaderLoader::loadFile(std::string path)$/;"	f	class:ShaderLoader	signature:(std::string path)
+loadFile	ShaderLoader.h	/^	static std::string loadFile(std::string path);$/;"	p	class:ShaderLoader	access:private	signature:(std::string path)
+loadProgram	ShaderLoader.cpp	/^GLuint ShaderLoader::loadProgram(std::string vertexPath, std::string fragmentPath) $/;"	f	class:ShaderLoader	signature:(std::string vertexPath, std::string fragmentPath)
+loadProgram	ShaderLoader.h	/^	static GLuint loadProgram(std::string vertexPath, std::string fragmentPath);$/;"	p	class:ShaderLoader	access:public	signature:(std::string vertexPath, std::string fragmentPath)
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main.cpp	main.cpp	1;"	F
+makefile	makefile	1;"	F
+onDisplay	main.cpp	/^void onDisplay()$/;"	f	signature:()
+os	.ycm_extra_conf.py	/^import os$/;"	i
+reshape	main.cpp	/^void reshape(int width, int height) $/;"	f	signature:(int width, int height)
+resize	World.cpp	/^void World::resize(int width, int height) $/;"	f	class:World	signature:(int width, int height)
+resize	World.h	/^	void resize(int width, int height);$/;"	p	class:World	access:public	signature:(int width, int height)
+setNormal	VertexData.cpp	/^void VertexData::setNormal(GLfloat x)$/;"	f	class:VertexData	signature:(GLfloat x)
+setNormal	VertexData.cpp	/^void VertexData::setNormal(GLfloat x, GLfloat y)$/;"	f	class:VertexData	signature:(GLfloat x, GLfloat y)
+setNormal	VertexData.cpp	/^void VertexData::setNormal(GLfloat x, GLfloat y, GLfloat z)$/;"	f	class:VertexData	signature:(GLfloat x, GLfloat y, GLfloat z)
+setNormal	VertexData.h	/^	void setNormal(GLfloat x);$/;"	p	class:VertexData	access:public	signature:(GLfloat x)
+setNormal	VertexData.h	/^	void setNormal(GLfloat x, GLfloat y);$/;"	p	class:VertexData	access:public	signature:(GLfloat x, GLfloat y)
+setNormal	VertexData.h	/^	void setNormal(GLfloat x, GLfloat y, GLfloat z);$/;"	p	class:VertexData	access:public	signature:(GLfloat x, GLfloat y, GLfloat z)
+setTexture	VertexData.cpp	/^void VertexData::setTexture(GLfloat u)$/;"	f	class:VertexData	signature:(GLfloat u)
+setTexture	VertexData.cpp	/^void VertexData::setTexture(GLfloat u, GLfloat v)$/;"	f	class:VertexData	signature:(GLfloat u, GLfloat v)
+setTexture	VertexData.cpp	/^void VertexData::setTexture(GLfloat u, GLfloat v, GLfloat w)$/;"	f	class:VertexData	signature:(GLfloat u, GLfloat v, GLfloat w)
+setTexture	VertexData.h	/^	void setTexture(GLfloat u);$/;"	p	class:VertexData	access:public	signature:(GLfloat u)
+setTexture	VertexData.h	/^	void setTexture(GLfloat u, GLfloat v);$/;"	p	class:VertexData	access:public	signature:(GLfloat u, GLfloat v)
+setTexture	VertexData.h	/^	void setTexture(GLfloat u, GLfloat v, GLfloat w);$/;"	p	class:VertexData	access:public	signature:(GLfloat u, GLfloat v, GLfloat w)
+setVertex	VertexData.cpp	/^void VertexData::setVertex(GLfloat x)$/;"	f	class:VertexData	signature:(GLfloat x)
+setVertex	VertexData.cpp	/^void VertexData::setVertex(GLfloat x, GLfloat y)$/;"	f	class:VertexData	signature:(GLfloat x, GLfloat y)
+setVertex	VertexData.cpp	/^void VertexData::setVertex(GLfloat x, GLfloat y, GLfloat z)$/;"	f	class:VertexData	signature:(GLfloat x, GLfloat y, GLfloat z)
+setVertex	VertexData.cpp	/^void VertexData::setVertex(GLfloat x, GLfloat y, GLfloat z, GLfloat w)$/;"	f	class:VertexData	signature:(GLfloat x, GLfloat y, GLfloat z, GLfloat w)
+setVertex	VertexData.h	/^	void setVertex(GLfloat x);$/;"	p	class:VertexData	access:public	signature:(GLfloat x)
+setVertex	VertexData.h	/^	void setVertex(GLfloat x, GLfloat y);$/;"	p	class:VertexData	access:public	signature:(GLfloat x, GLfloat y)
+setVertex	VertexData.h	/^	void setVertex(GLfloat x, GLfloat y, GLfloat z);$/;"	p	class:VertexData	access:public	signature:(GLfloat x, GLfloat y, GLfloat z)
+setVertex	VertexData.h	/^	void setVertex(GLfloat x, GLfloat y, GLfloat z, GLfloat w);	$/;"	p	class:VertexData	access:public	signature:(GLfloat x, GLfloat y, GLfloat z, GLfloat w)
+timeAccumulator	World.h	/^	float timeAccumulator;$/;"	m	class:World	access:private
+title	main.cpp	/^constexpr auto title = "Super game";$/;"	v
+unbind	AbstractShader.cpp	/^void AbstractShader::unbind()$/;"	f	class:AbstractShader	signature:()
+unbind	AbstractShader.h	/^	void unbind();$/;"	p	class:AbstractShader	access:public	signature:()
+update	World.cpp	/^void World::update(float deltaTime)$/;"	f	class:World	signature:(float deltaTime)
+update	World.h	/^	void update(float deltaTime);$/;"	p	class:World	access:public	signature:(float deltaTime)
+width	World.h	/^	int width,height;$/;"	m	class:World	access:private
+width	main.cpp	/^constexpr auto width = 640, height = 480;$/;"	v
+world	main.cpp	/^std::unique_ptr<World> world;$/;"	v
+ycm_core	.ycm_extra_conf.py	/^import ycm_core$/;"	i
+~AbstractShader	AbstractShader.cpp	/^AbstractShader::~AbstractShader()$/;"	f	class:AbstractShader	signature:()
+~AbstractShader	AbstractShader.h	/^	~AbstractShader();$/;"	p	class:AbstractShader	access:public	signature:()
+~World	World.cpp	/^World::~World()$/;"	f	class:World	signature:()
+~World	World.h	/^	~World();$/;"	p	class:World	access:public	signature:()
