@@ -1,6 +1,7 @@
-#ifndef WORLD_H
-#define WORLD_H
+#pragma once
 
+#include "BasicShader.h"
+#include "Cube.h"
 
 class World {
 
@@ -11,10 +12,10 @@ public:
 	void draw();	
 	void resize(int width, int height);
 private:
+	BasicShader shader;
+	Cube cube;
 	int width,height;
 	int currentFPS;
 	float timeAccumulator;
 	void calculateFPS(float deltaTime);
 };
-
-#endif

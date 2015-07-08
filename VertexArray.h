@@ -2,7 +2,9 @@
 
 #include "VertexData.h"
 
+
 #include <vector>
+#include <GL/glew.h>
 
 class VertexArray
 {
@@ -13,7 +15,7 @@ public:
 	void unbind();
 	void render();
 private:
-	bool assertIfNotBinded();
+	void assertIfNotBinded();
 	bool isBinded;
 	GLuint vaoID;
 	GLuint vboID;

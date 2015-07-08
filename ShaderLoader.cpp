@@ -1,4 +1,5 @@
 #include "ShaderLoader.h"
+#include "CheckGLErrors.h"
 
 #include <iostream>
 #include <string>
@@ -38,12 +39,17 @@ GLuint ShaderLoader::createShader(std::string path, GLenum type)
 		return 0;
 	}
 
+	CheckGLErrors::checkErrors("Shader creation");
+
+
 	return shader;
 }
 
 
 GLuint ShaderLoader::loadProgram(std::string vertexPath, std::string fragmentPath) 
 {
+	CheckGLErrors::checkErrors("Program started");
+	std::cout << "Loading program " << vertexPath << " " << fragmentPath << std::endl;
 	GLuint vertexShader = createShader(vertexPath, GL_VERTEX_SHADER);	
 	GLuint fragmentShader = createShader(fragmentPath, GL_FRAGMENT_SHADER);
 	if(vertexShader==0 || fragmentShader == 0)
@@ -52,6 +58,7 @@ GLuint ShaderLoader::loadProgram(std::string vertexPath, std::string fragmentPat
 	glAttachShader(program, vertexShader);
 	glAttachShader(program, fragmentShader);
 	glLinkProgram(program);
+
 
 	GLint isLinked = 0;
 	glGetProgramiv(program, GL_LINK_STATUS, &isLinked);
@@ -71,9 +78,11 @@ GLuint ShaderLoader::loadProgram(std::string vertexPath, std::string fragmentPat
 		
 		return 0;
 	}
-
-	glDetachShader(program, vertexShader);
-	glDetachShader(program, fragmentShader);	
+	CheckGLErrors::checkErrors("Program creation");
+	
+	//glDetachShader(program, vertexShader);
+	//glDetachShader(program, fragmentShader);	
+	std::cout << "Program loaded!" << std::endl;
 
 	return program;
 }

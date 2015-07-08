@@ -1,20 +1,28 @@
 #include "VertexData.h"
 #include "AbstractShader.h"
+#include "CheckGLErrors.h"
+
+#include <string.h>
+#include <new>
 
 #include <iostream>
 #include <vector>
 
 void VertexData::bindDataToVBO(std::vector<VertexData> vertecies)
 {
-	std::vector<GLfloat> allVertecies;
 	//All vertecies have same length
+	int size = vertecies.size()*VertexData::size;
 	std::cout << "Allocating memory with " << vertecies.size()*VertexData::size << " float values" << std::endl;
-	allVertecies.reserve(vertecies.size()*VertexData::size);
-	for (auto vertex : vertecies)
-	//Merge all vertecies into one array
+	std::vector<GLfloat> allVertecies;
+	allVertecies.reserve(size);
+	for (auto vertex : vertecies) {
+		//Merge all vertecies into one array
 		allVertecies.insert(allVertecies.end(), vertex.data.begin(), vertex.data.end());
+	}
 
-	glBufferData(GL_ARRAY_BUFFER, allVertecies.size()*sizeof(GLfloat), &allVertecies[0], GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, size*sizeof(GLfloat), &allVertecies[0], GL_STATIC_DRAW);
+	CheckGLErrors::checkErrors("Data binding");
+
 }
 
 void VertexData::bindPointers()
@@ -22,6 +30,7 @@ void VertexData::bindPointers()
 	glVertexAttribPointer(AbstractShader::VERTEX_ATTRIB_LOCATION, VERTEX_SIZE, GL_FLOAT, GL_FALSE, stride, (GLvoid*)VERTEX_OFFSET);
 	glVertexAttribPointer(AbstractShader::TEXCOORD_ATTRIB_LOCATION, TEXTURE_SIZE, GL_FLOAT, GL_FALSE, stride, (GLvoid*)TEXTURE_OFFSET);
 	glVertexAttribPointer(AbstractShader::NORMAL_ATTRIB_LOCATION, NORMAL_SIZE, GL_FLOAT, GL_FALSE, stride, (GLvoid*)NORMAL_OFFSET);
+	CheckGLErrors::checkErrors("Pointer binding");
 }
 
 void VertexData::enablePointers()
@@ -29,11 +38,23 @@ void VertexData::enablePointers()
 	glEnableVertexAttribArray(AbstractShader::VERTEX_ATTRIB_LOCATION);
 	glEnableVertexAttribArray(AbstractShader::TEXCOORD_ATTRIB_LOCATION);
 	glEnableVertexAttribArray(AbstractShader::NORMAL_ATTRIB_LOCATION);
+	CheckGLErrors::checkErrors("Enabling poiners");
 }
 
 VertexData::VertexData()
 {
-	data.reserve(size);	
+	data.resize(size, 0.0f);
+}
+
+VertexData::~VertexData()
+{
+}
+
+void VertexData::print()
+{
+	for (auto vertex : data)
+		std::cout << vertex << " ";
+	std::cout << std::endl;
 }
 
 void VertexData::setVertex(GLfloat x)

@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <memory>
 #include <thread>
@@ -6,6 +7,7 @@
 #include <GL/freeglut.h>
 
 #include "World.h"
+#include "CheckGLErrors.h"
 
 std::unique_ptr<World> world;
 constexpr auto title = "Super game";
@@ -43,7 +45,7 @@ void onDisplay()
 {
 	(*world).draw();
 	glutSwapBuffers();
-	glFinish();
+	std::cout << "Calls finished" << std::endl;
 }
 
 void free_resources()
@@ -64,7 +66,9 @@ int main(int argc, char *argv[])
 	glutInitWindowSize(width,height);
 	glutCreateWindow(title);
 
+	glewExperimental = GL_TRUE;
 	GLenum glew_status = glewInit();
+	CheckGLErrors::checkErrors("GLEW initialization");
 	if(glew_status!=GLEW_OK)
 	{
 		std::cerr << "Error: " << glewGetErrorString(glew_status) << std::endl;

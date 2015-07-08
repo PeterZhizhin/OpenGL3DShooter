@@ -10,6 +10,8 @@ public:
 	static void bindPointers();
 	static void enablePointers();
 	VertexData();
+	~VertexData();
+	void print();
 	void setVertex(GLfloat x);
 	void setVertex(GLfloat x, GLfloat y);
 	void setVertex(GLfloat x, GLfloat y, GLfloat z);
